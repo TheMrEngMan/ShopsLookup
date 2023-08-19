@@ -1,0 +1,57 @@
+{
+  "text.autoconfig.shopslookup.title": "Remote Players",
+
+  "text.autoconfig.shopslookup.option.waypointColor": "Waypoint color",
+  "text.autoconfig.shopslookup.option.waypointColor.@Tooltip": "Color to use for shops marker waypoints\nOnly used if Xaero's world map mod is installed",
+  "text.autoconfig.shopslookup.option.waypointColor.BLACK":         "Black",
+  "text.autoconfig.shopslookup.option.waypointColor.DARK_BLUE":     "Dark Blue",
+  "text.autoconfig.shopslookup.option.waypointColor.DARK_GREEN":    "Dark Green",
+  "text.autoconfig.shopslookup.option.waypointColor.DARK_AQUA":     "Dark Aqua",
+  "text.autoconfig.shopslookup.option.waypointColor.DARK_RED":      "Dark Red",
+  "text.autoconfig.shopslookup.option.waypointColor.DARK_PURPLE":   "Dark Purple",
+  "text.autoconfig.shopslookup.option.waypointColor.GOLD":          "Gold",
+  "text.autoconfig.shopslookup.option.waypointColor.GRAY":          "Gray",
+  "text.autoconfig.shopslookup.option.waypointColor.DARK_GRAY":     "Dark Gray",
+  "text.autoconfig.shopslookup.option.waypointColor.BLUE":          "Blue",
+  "text.autoconfig.shopslookup.option.waypointColor.GREEN":         "Green",
+  "text.autoconfig.shopslookup.option.waypointColor.AQUA":          "Aqua",
+  "text.autoconfig.shopslookup.option.waypointColor.RED":           "Red",
+  "text.autoconfig.shopslookup.option.waypointColor.LIGHT_PURPLE":  "Light Purple",
+  "text.autoconfig.shopslookup.option.waypointColor.YELLOW":        "Yellow",
+  "text.autoconfig.shopslookup.option.waypointColor.WHITE":         "White",
+
+  "text.autoconfig.shopslookup.option.updateInterval": "Update interval (hours)",
+  "text.autoconfig.shopslookup.option.updateInterval.@Tooltip": "How often to download new shops data\n0 = On every login",
+
+  "text.autoconfig.shopslookup.option.resultsPerPage": "Results per page",
+  "text.autoconfig.shopslookup.option.resultsPerPage.@Tooltip": "How many results to show in chat at a time",
+
+  "text.autoconfig.shopslookup.option.defaultSpreadsheetColumnNames.@PrefixText": "§7----------§r\nComma separated list of spreadsheet column names defining:\n§71. item name, 2. shop name, 3. item type, 4. shop location§r\nin that order, with the item type column being optional",
+  "text.autoconfig.shopslookup.option.defaultSpreadsheetColumnNames": "Default Spreadsheet Column Names",
+  "text.shopslookup.option.defaultSpreadsheetColumnNames.error": "Invalid spreadsheet column names format!",
+
+  "text.autoconfig.shopslookup.option.serverShopURLs.@PrefixText": "§7----------§r\nThe shop URL must be a direct link to a server providing a .csv file\ne.g. §7https://shop.example.com/raw_data.csv§r\nor a Google Spreadsheets link to a specific sheet\ne.g. §7https://docs.google.com/spreadsheets/d/abc/edit#gid=123§r",
+  "text.autoconfig.shopslookup.option.serverShopURLs": "Server Shop URLs",
+  "text.autoconfig.shopslookup.option.serverShopURLs.@Tooltip": "For each server you'd like to use the mod on,\nfill out the IP and corresponding DIRECT shop URL like so:\nplay.example.com -> https://shop.example.com/raw_data.csv",
+  "text.shopslookup.option.serverShopURLs.error": "Invalid server shop URL format!",
+
+  "text.shopslookup.chat.prefix": "§8[§7SL§8]§r ",
+  "text.shopslookup.chat.command.notenabled": "§cNo shop URL configured for this server, or an error occurred getting shop data",
+  "text.shopslookup.chat.command.shopslookup.header.all": "§8[§7SL§8]§r All shops & items:",
+  "text.shopslookup.chat.command.shopslookup.header.item": "§8[§7SL§8]§r Shops selling items similar to \"§d%s§r\":",
+  "text.shopslookup.chat.command.shopslookup.hover": "Click to add waypoint",
+  "text.shopslookup.chat.command.shopslookup.help.1": "§cUsage:",
+  "text.shopslookup.chat.command.shopslookup.help.2": "§c/shopslookup item <item name> (alias: /sl <item name>)",
+  "text.shopslookup.chat.command.shopslookup.help.3": "§c/shopslookup list (alias: /sll)",
+  "text.shopslookup.chat.command.shopslookup.page": "§fPage %s/%s§r ",
+  "text.shopslookup.chat.command.slaw.help.1": "§cInternal command used for adding waypoints.",
+  "text.shopslookup.chat.command.slaw.help.2": "§cUsage:",
+  "text.shopslookup.chat.command.slaw.help.3": "§c/slaw <index>",
+  "text.shopslookup.chat.command.sllp.help.1": "§cInternal command used for pagination.",
+  "text.shopslookup.chat.command.sllp.help.2": "§cUsage:",
+  "text.shopslookup.chat.command.sllp.help.3": "§c/sllp <page #>",
+  "text.shopslookup.chat.command.slaw.added": "§8[§7SL§8]§r Added waypoint \"§d%s§r\" at %s",
+
+  "text.shopslookup.chat.error.shopupdate.description": "§4Could not process shops data for server",
+  "text.shopslookup.chat.error.shopupdate.help": "§4Check shop URL and/or column names in settings"
+}

@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "shopslookup",
+	"version": "${version}",
+	"name": "Shops Lookup",
+	"description": "Search for shops listed on an online spreadsheet, in-game!",
+	"authors": [
+		"MrEngMan"
+	],
+	"contact": {
+		"sources": "https://github.com/TheMrEngMan/shopslookup"
+	},
+	"license": "GPLv3",
+	"icon": "assets/shopslookup/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.mrengman.ShopsLookup"
+		],
+		"modmenu": [
+			"com.mrengman.config.ShopsLookupConfigModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"shopslookup.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.11.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
