@@ -30,6 +30,9 @@
   "text.autoconfig.shopslookup.option.defaultSpreadsheetColumnNames": "Default Spreadsheet Column Names",
   "text.shopslookup.option.defaultSpreadsheetColumnNames.error": "Invalid spreadsheet column names format!",
 
+  "text.autoconfig.shopslookup.option.useEnglishForItemNameSuggestions.@Tooltip": "When suggesting item names, use English instead of currently selected game language\n(Only applied after re-joining server)",
+  "text.autoconfig.shopslookup.option.useEnglishForItemNameSuggestions": "Use English for item name suggestions",
+
   "text.autoconfig.shopslookup.option.serverShopURLs.@PrefixText": "§7----------§r\nThe shop URL must be a direct link to a server providing a .csv file\ne.g. §7https://shop.example.com/raw_data.csv§r\nor a Google Spreadsheets link to a specific sheet\ne.g. §7https://docs.google.com/spreadsheets/d/abc/edit#gid=123§r",
   "text.autoconfig.shopslookup.option.serverShopURLs": "Server Shop URLs",
   "text.autoconfig.shopslookup.option.serverShopURLs.@Tooltip": "For each server you'd like to use the mod on,\nfill out the IP and corresponding DIRECT shop URL like so:\nplay.example.com -> https://shop.example.com/raw_data.csv",

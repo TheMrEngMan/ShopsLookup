@@ -9,6 +9,7 @@ import com.mojang.brigadier.tree.ArgumentCommandNode;
 import com.mojang.brigadier.tree.LiteralCommandNode;
 import com.mrengman.ChatUtil;
 import com.mrengman.InternalDataUtil;
+import com.mrengman.LanguageUtil;
 import com.mrengman.ShopsLookup;
 import com.mrengman.config.ConfigUtil;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
@@ -43,7 +44,11 @@ public class PlayerCommands {
             ArrayList<String> itemNames = new ArrayList<>();
             Iterator<String> itemNamesIterator = Registries.ITEM.stream().map(Item::getTranslationKey).iterator();
             while (itemNamesIterator.hasNext()) {
-                itemNames.add(Language.getInstance().get(itemNamesIterator.next()));
+                if(ConfigUtil.useEnglishForItemNameSuggestions()) {
+                    itemNames.add(LanguageUtil.englishLanguageInstance.get(itemNamesIterator.next()));
+                } else {
+                    itemNames.add(Language.getInstance().get(itemNamesIterator.next()));
+                }
             }
 
             LiteralCommandNode<FabricClientCommandSource> shopsLookupNode = ClientCommandManager

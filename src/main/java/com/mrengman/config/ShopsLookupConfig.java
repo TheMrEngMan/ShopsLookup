@@ -26,6 +26,9 @@ public class ShopsLookupConfig implements ConfigData {
     @ConfigEntry.Gui.PrefixText
     public String defaultSpreadsheetColumnNames = "Item, Shop name, Type, Location";
 
+    @ConfigEntry.Gui.Tooltip
+    public boolean useEnglishForItemNameSuggestions = false;
+
     @ConfigEntry.Gui.PrefixText
     @ConfigEntry.Gui.Tooltip()
     public Map<String, String> serverShopURLs = new LinkedHashMap<>(); // server IP -> shop URL

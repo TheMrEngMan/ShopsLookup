@@ -66,6 +66,11 @@ public class ConfigUtil {
         return config.resultsPerPage;
     }
 
+    public static boolean useEnglishForItemNameSuggestions() {
+        // TODO: make this per-server, and for any language
+        return config.useEnglishForItemNameSuggestions;
+    }
+
     public static SpreadsheetColumnNames getSpreadsheetColumnNames() throws CsvValidationException, IOException {
 
         // TODO: make this per-server
