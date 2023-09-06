@@ -48,9 +48,13 @@ If Xaero's world map is installed, shop locations listed in chat can be clicked 
 This mod can be built by cloning this repository, then running:
 
 ```sh
-./gradlew build
+./gradlew remapJar
 ```
 
 The resulting mod files are stored in `build/libs/`
 
-(If you have ideas on how to align the text better, RPs are welcome!)
+### RPs are welcome!
+Especially if you have ideas on how to:
+- Align the text better 
+- Add per-server settings
+- Add multi-language item name suggestions, not just english / game language
